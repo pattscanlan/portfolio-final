@@ -40,7 +40,7 @@ const PasswordGate = ({ handlePasswordSubmit, passwordInput, setPasswordInput, e
 const App = () => {
   // --- Password Protection State ---
   // To change the password, update the value of 'correctPassword'
-  const correctPassword = 'mountain'; // <-- CHANGE YOUR PASSWORD HERE
+  const correctPassword = 'password'; // <-- CHANGE YOUR PASSWORD HERE
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
@@ -281,7 +281,7 @@ const App = () => {
     <div className="bg-slate-900 text-slate-300 font-sans leading-normal tracking-tight">
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-white">Patrick Scanlan</a>
+          <a href="#" className="text-2xl font-bold text-white">Your Name</a>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map(link => (
               <a key={link.href} href={link.href} className="text-slate-300 hover:text-blue-400 transition-colors duration-300">{link.label}</a>
@@ -405,7 +405,15 @@ const App = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/3">
-                <img src="https://placehold.co/400x400/1e293b/ffffff?text=You" alt="Your Name" className="rounded-full shadow-lg w-64 h-64 md:w-full md:h-auto mx-auto object-cover" />
+                {/* To change your profile picture:
+                  1. Add your image file (e.g., 'profile.jpg') to the 'public/images' folder.
+                  2. Replace the 'src' value below with: process.env.PUBLIC_URL + '/images/profile.jpg'
+                */}
+                <img 
+                  src= /images/profile.png 
+                  alt="Your Name" 
+                  className="rounded-full shadow-lg w-64 h-64 mx-auto object-cover" 
+                />
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My path to UX research started on a ridgeline, not in an office.</h2>
