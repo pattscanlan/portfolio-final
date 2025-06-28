@@ -1,6 +1,41 @@
 import React, { useState } from 'react';
 import { Briefcase, User, Mail, Menu, X, ArrowRight, Dribbble, Linkedin, Twitter, BarChart2, GitMerge, Lock } from 'lucide-react';
 
+// --- Password Protection Component ---
+// Moved outside the App component to prevent re-rendering issues
+const PasswordGate = ({ handlePasswordSubmit, passwordInput, setPasswordInput, error }) => (
+  <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-4">
+    <div className="w-full max-w-sm">
+      <div className="text-center mb-6">
+          <Lock className="mx-auto h-12 w-12 text-slate-500" />
+          <h2 className="mt-4 text-2xl font-bold text-white">Portfolio Access</h2>
+          <p className="mt-2 text-sm text-slate-400">Please enter the password to view this portfolio.</p>
+      </div>
+      <form onSubmit={handlePasswordSubmit} className="bg-slate-800 p-8 rounded-lg shadow-lg">
+        <div className="mb-4">
+          <label htmlFor="password" className="block text-sm font-bold text-slate-300 mb-2">Password</label>
+          <input
+            type="password"
+            id="password"
+            value={passwordInput}
+            onChange={(e) => setPasswordInput(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="••••••••"
+          />
+        </div>
+        {error && <p className="text-red-400 text-xs italic mb-4">{error}</p>}
+        <button
+          type="submit"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300"
+        >
+          Unlock
+        </button>
+      </form>
+    </div>
+  </div>
+);
+
+
 // Main App Component
 const App = () => {
   // --- Password Protection State ---
@@ -230,42 +265,16 @@ const App = () => {
     </div>
   );
 
-  // --- Password Protection Component ---
-  const PasswordGate = () => (
-    <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-6">
-            <Lock className="mx-auto h-12 w-12 text-slate-500" />
-            <h2 className="mt-4 text-2xl font-bold text-white">Portfolio Access</h2>
-            <p className="mt-2 text-sm text-slate-400">Please enter the password to view this portfolio.</p>
-        </div>
-        <form onSubmit={handlePasswordSubmit} className="bg-slate-800 p-8 rounded-lg shadow-lg">
-          <div className="mb-4">
-            <label htmlFor="password" className="block text-sm font-bold text-slate-300 mb-2">Password</label>
-            <input
-              type="password"
-              id="password"
-              value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
-              className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="••••••••"
-            />
-          </div>
-          {error && <p className="text-red-400 text-xs italic mb-4">{error}</p>}
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300"
-          >
-            Unlock
-          </button>
-        </form>
-      </div>
-    </div>
-  );
-
   // --- Main Render Logic ---
   if (!isAuthenticated) {
-    return <PasswordGate />;
+    return (
+      <PasswordGate
+        handlePasswordSubmit={handlePasswordSubmit}
+        passwordInput={passwordInput}
+        setPasswordInput={setPasswordInput}
+        error={error}
+      />
+    );
   }
 
   return (
