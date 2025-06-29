@@ -173,7 +173,7 @@ const App = () => {
       category: 'UX Research & Product Strategy',
       title: 'Apple: Reducing False Positives for Automated 911 Features',
       description: 'Led a mixed-methods research initiative to understand and address the high rate of false-positive activations for features like Crash Detection, reducing emergency services strain.',
-      imageUrl: 'https://placehold.co/600x400/84cc16/ffffff?text=Journey+Map',
+      imageUrl: process.env.PUBLIC_URL + '/TCJourneyMap.png',
       tags: ['UX Research', 'Data Analysis', 'Service Design', 'Journey Mapping', 'Product Strategy'],
       details: {
         role: "I was the lead researcher responsible for investigating the high volume of non-emergency calls originating from automated features. My role was to quantify the problem, understand the impact on Public Safety Answering Points (PSAPs), and provide actionable recommendations to engineering and design teams.",
