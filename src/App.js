@@ -427,7 +427,7 @@ const App = () => {
                   I'm now formalizing my real-world experience at Carnegie Mellon's Integrated Innovation Institute, and I am looking to lead research and strategy in a domain where the stakes are high. My passion lies in optimizing human performance and safety—whether in the outdoors, health and wellness, or emergency services—by building meaningful products that users can trust when it matters most.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-slate-400 hover:text-blue-400"><Linkedin size={24} /></a>
+                  <a href="https://www.linkedin.com/in/pattscanlan/" className="text-slate-400 hover:text-blue-400"><Linkedin size={24} /></a>
                   <a href="#" className="text-slate-400 hover:text-blue-400"><Dribbble size={24} /></a>
                   <a href="#" className="text-slate-400 hover:text-blue-400"><Twitter size={24} /></a>
                 </div>
@@ -442,7 +442,7 @@ const App = () => {
             <div className="text-center max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-white">Let's build something great together.</h2>
               <p className="text-slate-400 mt-2 mb-8">I'm currently available for new opportunities. If you have a project in mind or just want to connect, I'd love to hear from you.</p>
-              <a href="mailto:your.email@example.com" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 inline-block">
+              <a href="mailto:pattscanlan@gmail.com" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 inline-block">
                 Say Hello
               </a>
             </div>
