@@ -281,7 +281,7 @@ const App = () => {
     <div className="bg-slate-900 text-slate-300 font-sans leading-normal tracking-tight">
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-white">Your Name</a>
+          <a href="#" className="text-2xl font-bold text-white">Patrick Scanlan</a>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map(link => (
               <a key={link.href} href={link.href} className="text-slate-300 hover:text-blue-400 transition-colors duration-300">{link.label}</a>
