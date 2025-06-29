@@ -244,8 +244,8 @@ const App = () => {
           { title: "Go-to-Market Strategy", description: "I then developed the comprehensive go-to-market plan. This included the distribution strategy, which outlined a direct-to-consumer model supplemented by key referral channels like healthcare providers and senior centers. I also created the promotional strategy, detailing the messaging, budget, and campaigns needed to build trust and drive adoption within our target demographic." }
         ],
         visuals: [
-           { type: 'image', url: 'https://i.imgur.com/gYxJ5rU.png', caption: 'A wireframe of the iCare Hub smart display, designed to be an accessible, hands-free personal health assistant.' },
-           { type: 'image', url: 'https://i.imgur.com/d8p9c7z.png', caption: 'The multi-channel distribution strategy I developed, leveraging both direct-to-consumer sales and trusted referrals from healthcare providers and community organizations.' }
+           { type: 'image', url: process.env.PUBLIC_URL + '/iCareHubWire.png', caption: 'A wireframe of the iCare Hub smart display, designed to be an accessible, hands-free personal health assistant.' },
+           { type: 'image', url: process.env.PUBLIC_URL + '/iCareHubDistribution.png', caption: 'The multi-channel distribution strategy I developed, leveraging both direct-to-consumer sales and trusted referrals from healthcare providers and community organizations.' }
         ],
         solution: "The final concept was 'iCare Hub,' a voice-first, AI-powered health assistant combining a simple home device and a mobile app. The solution centralizes health information, simplifies communication with providers, and provides peace of mind for patients and their families. The go-to-market strategy I created provides a clear roadmap for a phased launch, starting with pilot programs and scaling through strategic partnerships.",
         outcome: "As an academic exercise, the outcome was a complete, investment-ready proposal for a new product and business. The project demonstrated our team's ability to move from an initial problem statement to a detailed product, marketing, and financial plan.",
