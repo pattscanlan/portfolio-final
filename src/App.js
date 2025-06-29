@@ -208,7 +208,7 @@ const App = () => {
         ],
         visuals: [
            { type: 'image', url: 'https://i.imgur.com/sW6t7xG.png', caption: 'Our final solution concept, illustrating how NutriNeeds bridges the gap between dietary restrictions, community support, and convenience.' },
-           { type: 'image', url: 'https://i.imgur.com/9q7y5rC.png', caption: 'High-fidelity mockups of the NutriNeeds app, showcasing the custom health and diet profile and the extensive recipe library.' }
+           { type: 'image', url: process.env.PUBLIC_URL + '/NutriNeedsProto.png', caption: 'High-fidelity mockups of the NutriNeeds app, showcasing the custom health and diet profile and the extensive recipe library.' }
         ],
         solution: "The final deliverable was a comprehensive business and product proposal for NutriNeeds. The concept addresses the core user needs of affordability and customization by integrating with local supply chains and focusing on personalized, dietician-approved plans.",
         outcome: "As an academic project, the outcome was a well-researched and validated product concept that demonstrates a rigorous, framework-driven approach to innovation. Our final presentation successfully made the case for a viable new entry into the meal-kit market by targeting a specific, high-need user segment.",
