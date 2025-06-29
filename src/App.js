@@ -121,7 +121,7 @@ const App = () => {
       category: 'Methodology & Decision-Making',
       title: 'A Case Study in Decision-Making: Lessons from Avalanche Forecasting',
       description: 'An analysis of a high-stakes backcountry ski tour that demonstrates my core methodology for data synthesis, risk assessment, and decision-making under uncertainty.',
-      imageUrl: 'https://i.imgur.com/83p54vj.png',
+      imageUrl: process.env.PUBLIC_URL + '/GiroseThumb.png',
       tags: ['Risk Assessment', 'Data Synthesis', 'Decision-Making', 'Human Factors', 'Information Design'],
        details: {
         role: "This case study is a personal reflection on my work as a professional mountain guide and avalanche forecaster. It examines a real-world scenario where I had to make critical safety decisions with incomplete information. It is presented here to offer a transparent look into my core methodology for problem-solving, which directly informs my work as a UX researcher and strategist.",
