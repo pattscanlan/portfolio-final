@@ -196,7 +196,7 @@ const App = () => {
       category: 'Academic Team Project: Business Strategy & Product Concept',
       title: 'NutriNeeds: A Meal Service for Specialized Medical Diets',
       description: 'A team-based academic project to design a new meal-kit service for users with chronic diseases, focusing on market analysis, business strategy, and product conceptualization.',
-      imageUrl: 'https://i.imgur.com/sW6t7xG.png',
+      imageUrl: process.env.PUBLIC_URL + '/NutiNeedsIntro.png',
       tags: ['Business Strategy', 'Market Research', 'PESTLE Analysis', 'Product Concept', 'Team Collaboration'],
       details: {
         role: "As a key member of a four-person team at Carnegie Mellon's Integrated Innovation Institute, I contributed to all phases of this project, from initial market research to final product concept. My specific contributions included leading the PESTLE analysis, co-facilitating the Value Opportunity Analysis (VOA), and developing the core product requirements.",
