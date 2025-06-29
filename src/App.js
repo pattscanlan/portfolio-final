@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProfileImage from '/SubjectLarge.jpeg';
 import { Briefcase, User, Mail, Menu, X, ArrowRight, Dribbble, Linkedin, Twitter, BarChart2, GitMerge, Lock } from 'lucide-react';
 
 // --- Password Protection Component ---
@@ -410,7 +411,7 @@ const App = () => {
                   2. Replace the 'src' value below with: process.env.PUBLIC_URL + '/images/profile.jpg'
                 */}
                 <img 
-                  src="{process.env.PUBLIC_URL + '/SubjectLarge.jpeg'}" 
+                  src= ProfileImage 
                   alt="Your Name" 
                   className="rounded-full shadow-lg w-64 h-64 mx-auto object-cover" 
                 />
