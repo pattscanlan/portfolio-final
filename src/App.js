@@ -84,7 +84,7 @@ const App = () => {
             { title: "Developing Responder Training & Documentation", description: "To ensure the successful adoption of the feature, I helped develop a suite of educational materials for the global emergency services community. This included creating the comprehensive PSAP Operational Guide, which provided telecommunicators with clear instructions on the new workflow, technical considerations, and best practices for handling satellite-based emergency sessions." }
         ],
         visuals: [
-            { type: 'image', url: 'https://i.imgur.com/YgYp2gT.png', caption: 'Chart showing the increasing volume of Search & Rescue (SAR) incidents, which highlighted the growing need for better communication tools.' },
+            { type: 'image', url: process.env.PUBLIC_URL + '/public/SOSVolume.jpeg', caption: 'Chart showing the increasing volume of Search & Rescue (SAR) incidents, which highlighted the growing need for better communication tools.' },
             { type: 'image', url: 'https://i.imgur.com/rS2a0Y5.png', caption: 'Service design blueprint illustrating the complex existing flow (left) versus the streamlined, intuitive experience of the proposed "Responder-in-Chat" feature (right).' }
         ],
         solution: "The result was a validated, user-centered emergency communication feature. Key deliverables included the final emergency questionnaire flow, a robust validation testing protocol, a suite of educational materials including a detailed PSAP Operational Guide, and highly accurate pre-launch forecasts that modeled the distribution of different emergency use cases.",
