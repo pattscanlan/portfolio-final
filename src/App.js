@@ -111,7 +111,20 @@ const App = () => {
         visuals: [
             { type: 'image', url: process.env.PUBLIC_URL + '/AllTrailsScreens.png', caption: 'High-fidelity mockups showing the key user flows, from reporting an inaccuracy to the gamified contributor profile.' }
         ],
-        solution: "The final concept is a fully integrated feature that leverages the AllTrails community to solve its own data integrity problem. It includes a simple in-app reporting system, a verification workflow that prompts users to confirm issues in the field, and a gamified contributor profile that rewards participation. This transforms passive users into active co-creators of value.",
+        solution: (
+          <>
+            The final concept is a fully integrated feature that leverages the AllTrails community to solve its own data integrity problem. It includes a simple in-app reporting system, a verification workflow that prompts users to confirm issues in the field, and a gamified contributor profile that rewards participation. This transforms passive users into active co-creators of value.
+            <br /><br />
+            <a 
+              href={process.env.PUBLIC_URL + '/AllTrailsProcessBook.pdf'} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 font-bold"
+            >
+              View the full process book (PDF) &rarr;
+            </a>
+          </>
+        ),
         outcome: "This academic project demonstrates a clear, structured approach to product innovation. It shows how to translate a key user pain point into a viable, engaging, and value-additive feature concept. The prototype testing validated the core assumption that users would be motivated to participate in a well-designed contribution system.",
         learnings: "This project was a deep dive into the power of community and incentives. It taught me that you can solve complex data problems by designing systems that align user motivations with business goals. The key is to make participation easy, rewarding, and transparent, turning a chore into a compelling part of the user experience."
       }
