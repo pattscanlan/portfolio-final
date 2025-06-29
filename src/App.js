@@ -71,7 +71,7 @@ const App = () => {
       category: 'UX Research, Strategy & Service Design',
       title: 'Apple: Designing Emergency SOS via Satellite',
       description: 'Led UX research and strategy for Apple\'s life-saving Emergency SOS via satellite, from designing the core user interaction to validating its performance with emergency services.',
-      imageUrl: process.env.PUBLIC_URL + '/SOSField.jpeg',
+      imageUrl: process.env.PUBLIC_URL + 'public/SOSVolume.jpeg',
       tags: ['UX Research', 'Product Strategy', 'Service Design', 'Validation Testing', 'Critical Systems'],
       details: {
         role: "As a UX Researcher, Strategist, and Subject Matter Expert, I served as a key liaison between a wide range of stakeholders. Internally, I collaborated daily with hardware engineers, software engineers, human-computer interaction (HCI) designers, and product marketing to ensure the feature was both technically feasible and aligned with user needs. Externally, I worked directly with end-users including accident victims, PSAP directors, telecommunicators, field responders, and public land managers to ground our product decisions in real-world context and operational realities.",
