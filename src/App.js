@@ -210,7 +210,20 @@ const App = () => {
            { type: 'image', url: process.env.PUBLIC_URL + '/NutriNeedsConcept.png', caption: 'Our final solution concept, illustrating how NutriNeeds bridges the gap between dietary restrictions, community support, and convenience.' },
            { type: 'image', url: process.env.PUBLIC_URL + '/NutriNeedsProto.png', caption: 'High-fidelity mockups of the NutriNeeds app, showcasing the custom health and diet profile and the extensive recipe library.' }
         ],
-        solution: "The final deliverable was a comprehensive business and product proposal for NutriNeeds. The concept addresses the core user needs of affordability and customization by integrating with local supply chains and focusing on personalized, dietician-approved plans.",
+        solution: (
+          <>
+            The final deliverable was a comprehensive business and product proposal for NutriNeeds. The concept addresses the core user needs of affordability and customization by integrating with local supply chains and focusing on personalized, dietician-approved plans.
+            <br /><br />
+            <a 
+              href={process.env.PUBLIC_URL + '/NutriNeeds Presentations.pdf'} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 font-bold"
+            >
+              View the project (PDF) &rarr;
+            </a>
+          </>
+        ),
         outcome: "As an academic project, the outcome was a well-researched and validated product concept that demonstrates a rigorous, framework-driven approach to innovation. Our final presentation successfully made the case for a viable new entry into the meal-kit market by targeting a specific, high-need user segment.",
         learnings: "This team project was an excellent exercise in team-based collaboration and applying formal business strategy frameworks to a user-centered design problem. It highlighted the challenge of balancing deep user needs (like medical-grade nutritional accuracy) with business model realities (like cost and logistics). My key takeaway was the power of using frameworks like PESTLE and VOA to create alignment and make confident, evidence-based decisions as a team."
       }
