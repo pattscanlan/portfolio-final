@@ -40,7 +40,7 @@ const PasswordGate = ({ handlePasswordSubmit, passwordInput, setPasswordInput, e
 const App = () => {
   // --- Password Protection State ---
   // To change the password, update the value of 'correctPassword'
-  const correctPassword = 'password'; // <-- CHANGE YOUR PASSWORD HERE
+  const correctPassword = 'mountain'; // <-- CHANGE YOUR PASSWORD HERE
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
