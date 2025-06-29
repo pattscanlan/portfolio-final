@@ -207,7 +207,7 @@ const App = () => {
           { title: "Business Model & User Experience", description: "We developed a business model centered on partnerships with healthcare providers and a multi-tiered subscription. I contributed to the UX conceptualization, focusing on a simple, clean UI that allows users to customize their health profiles and easily connect with a network of nutrition professionals." }
         ],
         visuals: [
-           { type: 'image', url: 'https://i.imgur.com/sW6t7xG.png', caption: 'Our final solution concept, illustrating how NutriNeeds bridges the gap between dietary restrictions, community support, and convenience.' },
+           { type: 'image', url: process.env.PUBLIC_URL + '/NutriNeedsConcept.png', caption: 'Our final solution concept, illustrating how NutriNeeds bridges the gap between dietary restrictions, community support, and convenience.' },
            { type: 'image', url: process.env.PUBLIC_URL + '/NutriNeedsProto.png', caption: 'High-fidelity mockups of the NutriNeeds app, showcasing the custom health and diet profile and the extensive recipe library.' }
         ],
         solution: "The final deliverable was a comprehensive business and product proposal for NutriNeeds. The concept addresses the core user needs of affordability and customization by integrating with local supply chains and focusing on personalized, dietician-approved plans.",
