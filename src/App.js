@@ -97,7 +97,7 @@ const App = () => {
       category: 'Academic Project: Product Innovation & Service Design',
       title: 'AllTrails: Improving Trust in Crowd-Sourced Data',
       description: 'A concept project for Carnegie Mellon University that enhances the AllTrails app by designing a system to verify user-generated data, increasing trust and safety.',
-      imageUrl: 'https://i.imgur.com/3Z8YQ4j.png',
+      imageUrl: process.env.PUBLIC_URL + '/AllTrailsThumb.png',
       tags: ['Product Strategy', 'Service Design', 'UX Research', 'Prototyping', 'Gamification'],
       details: {
         role: "As a graduate student at Carnegie Mellon's Integrated Innovation Institute, I led this project from conception to final prototype. I was responsible for all aspects of the work, including user research, service ecology mapping, jobs-to-be-done analysis, feature ideation, and UI/UX design.",
