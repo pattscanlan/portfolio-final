@@ -147,7 +147,20 @@ const App = () => {
         visuals: [
            { type: 'image', url: process.env.PUBLIC_URL + '/AvalancheForecastExample.png', caption: 'An example of a published daily avalanche forecast I authored for the Mount Washington Avalanche Center. This product synthesizes complex data into a clear, scannable, and actionable safety message for a diverse public audience, demonstrating a core competency in high-stakes information design.' }
         ],
-        solution: "The 'product' in this scenario is the decision itself: to ski the slopes. While the outcome was successful (no incident), the most valuable deliverable from this experience was the post-incident analysis and reflection. By deconstructing the decision-making process, I identified potential flaws in our logic and opportunities to improve our safety margins in the future.",
+        solution: (
+          <>
+            The 'product' in this scenario is the decision itself: to ski the slopes. While the outcome was successful (no incident), the most valuable deliverable from this experience was the post-incident analysis and reflection. By deconstructing the decision-making process, I identified potential flaws in our logic and opportunities to improve our safety margins in the future.
+            <br /><br />
+            <a 
+              href={process.env.PUBLIC_URL + '/ColGiroseReport.pdf'} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 font-bold"
+            >
+              View the full report (PDF) &rarr;
+            </a>
+          </>
+        ),
         outcome: "The direct outcome of this analysis was a refinement of my personal and professional risk management framework. It reinforced the importance of challenging assumptions, explicitly discussing cognitive biases, and prioritizing psychological safety within a team to ensure dissenting opinions are heard, regardless of experience levels.",
         learnings: "This experience was a powerful lesson in intellectual honesty. It's not enough for a decision to turn out well; you must rigorously question *why* it did. Was it skill and sound judgment, or did we get lucky? Applying this same critical lens to product and design decisions—separating successful outcomes from sound process—is fundamental to my work. It ensures that success is repeatable and not just the result of chance."
       }
