@@ -233,7 +233,7 @@ const App = () => {
       category: 'Academic Team Project: Business Strategy & Product Concept',
       title: 'iCare Hub: A Health Assistant for Elderly Care',
       description: 'A team-based academic project to design, market, and launch a new hardware/software solution to help elderly patients better manage their healthcare.',
-      imageUrl: 'https://i.imgur.com/gYxJ5rU.png',
+      imageUrl: process.env.PUBLIC_URL + '/iCareHubThumb.png',
       tags: ['Business Strategy', 'Marketing Plan', 'Product Launch', 'MVP Definition', 'Team Collaboration'],
       details: {
         role: "On a four-person team at Carnegie Mellon, I was responsible for defining the Minimum Viable Product (MVP) and leading the go-to-market strategy. My key contributions included mapping features to customer value, developing the multi-channel distribution strategy, and creating the promotional plan.",
