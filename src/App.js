@@ -410,7 +410,7 @@ const App = () => {
                   2. Replace the 'src' value below with: process.env.PUBLIC_URL + '/images/profile.jpg'
                 */}
                 <img 
-                  src= /images/profile.png 
+                  src= "/images/profile.png" 
                   alt="Your Name" 
                   className="rounded-full shadow-lg w-64 h-64 mx-auto object-cover" 
                 />
