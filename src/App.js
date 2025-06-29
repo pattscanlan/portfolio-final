@@ -410,7 +410,7 @@ const App = () => {
                   2. Replace the 'src' value below with: process.env.PUBLIC_URL + '/images/profile.jpg'
                 */}
                 <img 
-                  src="https://placehold.co/400x400/1e293b/ffffff?text=You" 
+                  src="{process.env.PUBLIC_URL + '/SubjectLarge.jpeg'}" 
                   alt="Your Name" 
                   className="rounded-full shadow-lg w-64 h-64 mx-auto object-cover" 
                 />
