@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProfileImage from '/SubjectLarge.jpeg';
+import ProfileImage from './SubjectLarge.jpeg';
 import { Briefcase, User, Mail, Menu, X, ArrowRight, Dribbble, Linkedin, Twitter, BarChart2, GitMerge, Lock } from 'lucide-react';
 
 // --- Password Protection Component ---
