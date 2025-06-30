@@ -88,7 +88,7 @@ const App = () => {
         To ensure the successful adoption of the feature, I helped develop a suite of educational materials for the global emergency services community. This included creating the comprehensive PSAP Operational Guide, which provided telecommunicators with clear instructions on the new workflow, technical considerations, and best practices for handling satellite-based emergency sessions.
         <br /><br />
         <a 
-          href={process.env.PUBLIC_URL + '/Apple-SOS-PSAP-Guide.pdf'} 
+          href={process.env.PUBLIC_URL + '/PSAPOpsGuide.pdf'} 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-blue-400 hover:text-blue-300 font-bold"
