@@ -81,8 +81,25 @@ const App = () => {
             { title: "In-the-Field Validation with Emergency Services", description: "I designed and executed a confidential, in-real-life (IRL) testing protocol with 20 PSAPs. A key insight presented to leadership was the 'unremarkable PSAP response': telecommunicators handled sessions normally and without confusion, validating the core design. However, testing also revealed that PSAP policies often prevented them from immediately dispatching on our initial data alone, highlighting a critical need for PSAP education and policy adaptation to reduce redundancies." },
             { title: "Post-Launch Insights from Complex Rescues", description: "My analysis of real-world events, including the 'Chinese Puzzle Wall' climbing accident and a Utah slot canyon rescue, exposed a recurring service design flaw. In both cases, the relay center or PSAP, bound by protocol, asked redundant questions and could not provide the specialized advice or rescue plans the users needed. This led to user confusion and a loss of confidence. These cases became powerful evidence that a direct line of communication to SAR experts was essential, with the potential to save 30-60 minutes in a complex case." },
             { title: "Designing the 'Responder-in-Chat' Solution", description: "Armed with data from my validation testing and the powerful narratives from real-world case studies, I designed the 'Responder-in-Chat' feature enhancement. This addressed the #1 request from SAR teams and was presented to leadership as a key opportunity to improve SAR response. My proposal included a service experience blueprint, high-level engineering mechanics, and detailed product requirements prioritized into 'Essential' and 'Candidate' features to provide a clear path to implementation." },
-            { title: "Developing Responder Training & Documentation", description: "To ensure the successful adoption of the feature, I helped develop a suite of educational materials for the global emergency services community. This included creating the comprehensive PSAP Operational Guide, which provided telecommunicators with clear instructions on the new workflow, technical considerations, and best practices for handling satellite-based emergency sessions." }
+            {
+    title: "Developing Responder Training & Documentation",
+    description: (
+      <>
+        To ensure the successful adoption of the feature, I helped develop a suite of educational materials for the global emergency services community. This included creating the comprehensive PSAP Operational Guide, which provided telecommunicators with clear instructions on the new workflow, technical considerations, and best practices for handling satellite-based emergency sessions.
+        <br /><br />
+        <a 
+          href={process.env.PUBLIC_URL + '/Apple-SOS-PSAP-Guide.pdf'} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-blue-400 hover:text-blue-300 font-bold"
+        >
+          View the PSAP Operational Guide (PDF) &rarr;
+        </a>
+      </>
+    )
+}
         ],
+        
         visuals: [
             { type: 'image', url: process.env.PUBLIC_URL + '/SOSVolume.jpeg', caption: 'Chart showing the increasing volume of Search & Rescue (SAR) incidents, which highlighted the growing need for better communication tools.' },
             { type: 'image', url: process.env.PUBLIC_URL + '/SOSServiceBlueprint.jpg', caption: 'Service design blueprint illustrating the complex existing flow (left) versus the streamlined, intuitive experience of the proposed "Responder-in-Chat" feature (right).' }
